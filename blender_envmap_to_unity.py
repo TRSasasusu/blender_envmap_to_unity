@@ -10,7 +10,7 @@ if __name__ == "__main__":
     image = Image.open(param[1])
 
     # Size of the one image.
-    size = image.size[1] / 2
+    size = int(image.size[1] / 2)
 
     if len(param) == 3 and param[2] == "-t":
         new_image = Image.new("RGB", (size * 4, size * 3))
